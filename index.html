@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startQuestion()">
+<div class="popup popup_visible">
+    <button class="popup__close">✕</button>
+    <!-- Question 1-->
+    <div class="popup__content question-visible">
+        <h2 class="popup__title">What TV show should I watch?</h2>
+        <p class="popup__subtitle">Take this four-question quiz and discover your movie match!</p>
+        <div class="popup__progress">
+            <div class="popup__progress-item ">1</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item ">2</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">3</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">4</div>
+        </div>
+        <div class="quiz">
+            <h5 class="quiz__question">What genre do you prefer?</h5>
+            <div class="quiz__answers">
+
+
+            </div>
+            <button class="popup__button">Next</button>
+            <button class="refresh__button d-none" >Refresh</button>
+        </div>
+    </div>
+    <!-- Question 2-->
+    <div class="popup__content">
+        <h2 class="popup__title">What TV show should I watch?</h2>
+        <p class="popup__subtitle">Take this four-question quiz and discover your movie match!</p>
+
+        <div class="popup__progress">
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item popup__progress-item_active">2</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">3</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">4</div>
+        </div>
+        <div class="quiz">
+            <h5 class="quiz__question">What kind of setting do you like?</h5>
+            <div class="quiz__answers">
+                <label class="container">Futuristic
+                    <input type="radio" name="option2" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Historical
+                    <input type="radio" name="option2" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Alternate reality
+                    <input type="radio" name="option2" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Space
+                    <input type="radio" name="option2" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button class="popup__button" id="popupButton2" disabled="true">Next</button>
+        </div>
+    </div>
+    <!-- Question 3-->
+    <div class="popup__content">
+        <h2 class="popup__title">What TV show should I watch?</h2>
+        <p class="popup__subtitle">Take this four-question quiz and discover your movie match!</p>
+        <div class="popup__progress">
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item popup__progress-item_active">3</div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">4</div>
+        </div>
+        <div class="quiz">
+            <h5 class="quiz__question">What kind of characters do you like?</h5>
+            <div class="quiz__answers">
+                <label class="container">Superheroes
+                    <input type="radio" name="option3" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Time travelers
+                    <input type="radio" name="option3" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Mutants
+                    <input type="radio" name="option3" class="quiz__input">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button class="popup__button" id="popupButton3" disabled="true">Next</button>
+        </div>
+    </div>
+    <!-- Question 4-->
+    <div class="popup__content">
+        <h2 class="popup__title">What TV show should I watch?</h2>
+        <p class="popup__subtitle">Take this four-question quiz and discover your movie match!</p>
+
+        <div class="popup__progress">
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item">
+                🗸
+            </div>
+            <div class="popup__progress-line"></div>
+            <div class="popup__progress-item popup__progress-item_active">4</div>
+        </div>
+        <div class="quiz">
+            <h5 class="quiz__question">Choose one TV show</h5>
+            <div class="quiz__answers quiz__answers_images">
+                <label class="container container_images">
+                    <img src="https://th.bing.com/th/id/OIP.pNlTFkxtPD8XTKw13qqNJQHaK-?pid=ImgDet&amp;rs=1" alt="movie">
+                    <input type="radio" name="option4" class="quiz__input">
+                    <span class="checkmark checkmark_images"></span>
+                </label>
+                <label class="container container_images">
+                    <img src="https://th.bing.com/th/id/OIP.j9gSPKdfACS7RjMu9H08ugHaLH?pid=ImgDet&amp;rs=1" alt="movie">
+                    <input type="radio" name="option5" class="quiz__input">
+                    <span class="checkmark checkmark_images"></span>
+                </label>
+                <label class="container container_images">
+                    <img src="https://th.bing.com/th/id/R.e08a111d661dd83e55e0ad19c1de0f1b?rik=T8lYPSwtrGzvfg&amp;riu=http%3a%2f%2fcdn.collider.com%2fwp-content%2fuploads%2fthe-office-season-seven-dvd-cover.jpg&amp;ehk=Rd0gLUa6fGjp5IWbL7TZaHT29DbwWecdqTi7KnmY5yY%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="movie">
+                    <input type="radio" name="option4" class="quiz__input">
+                    <span class="checkmark checkmark_images"></span>
+                </label>
+            </div>
+            <button class="popup__button" id="popupButton4" disabled="true">Next</button>
+        </div>
+    </div>
+    <!-- Final Slide -->
+    <div class="popup__content popup__content6">
+        <h2 class="popup__title">Great! Here is the perfect TV show for you: ....</h2>
+        <img src="https://images.unsplash.com/photo-1635616208778-3d034a225ac6?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=764&amp;q=80" alt="movies" class="popup__final-img">
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
